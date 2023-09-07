@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signUp</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+        body {
+            background: #040D12;
+            font-family: Raleway, sans-serif;
+            color: #666;
+        }
+
+        .signUp {
+            margin: 20px auto;
+            padding: 40px 50px;
+            max-width: 300px;
+            border-radius: 5px;
+            background: #fff;
+            box-shadow: 1px 1px 1px #666;
+        }
+
+        .signUp input {
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+            margin: 10px 0;
+            padding: 14px 12px;
+            font-size: 16px;
+            border-radius: 2px;
+            font-family: Raleway, sans-serif;
+        }
+
+        .signUp input[type=email],
+        .signUp input[type=password],
+        .signUp input[type=tel],
+        .signUp input[type=text] {
+            border: 1px solid #c0c0c0;
+            border-radius: 25px;
+            transition: .2s;
+        }
+
+        .signUp input[type=email]:hover {
+            border-color: #183D3D;
+            outline: none;
+            transition: all .2s ease-in-out;
+        }
+
+        .signUp input[type=submit] {
+            border: none;
+            background: #183D3D;
+            color: white;
+            font-weight: bold;
+            transition: 0.2s;
+            margin: 20px 0px;
+            border-radius: 25px;
+        }
+
+        .signUp input[type=submit]:hover {
+            background: #183D3D;
+        }
+
+        .signUp h2 {
+            margin: 20px 0 0;
+            color: #183D3D;
+            font-size: 28px;
+        }
+
+        .signUp p {
+            margin-bottom: 40px;
+        }
+
+
+        .signUp h2,
+        .signUp p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/signUp" method="POST" class="signUp" name="loginForm">
+        <h2>Welcome</h2>
+        <p>Please fill the form</p>
+        <input type="text" name="name" id="name" placeholder="Name" required>
+        <input type="email" name="email" id="Email" placeholder="Email" required />
+        <input type="tel" name="phoneNum" id="phoneNum" placeholder="Phone Number">
+        <input type="password" name="password" id="Password" placeholder="Password" required />
+        <input type="password" name="confirmPswd" id="confirmPswd" placeholder="Confirm Password" required />
+        <input type="submit" value="signUp" />
+    </form>
+
+</body>
+
+</html>

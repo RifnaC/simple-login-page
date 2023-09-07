@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+        body {
+            background: #040D12;
+            font-family: Raleway, sans-serif;
+            color: #666;
+        }
+
+        .login {
+            margin: 20px auto;
+            padding: 40px 50px;
+            max-width: 300px;
+            border-radius: 5px;
+            background: #fff;
+            box-shadow: 1px 1px 1px #666;
+        }
+
+        .login input {
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+            margin: 10px 0;
+            padding: 14px 12px;
+            font-size: 16px;
+            border-radius: 2px;
+            font-family: Raleway, sans-serif;
+        }
+
+        .login input[type=email],
+        .login input[type=password] {
+            border: 1px solid #c0c0c0;
+            border-radius: 25px;
+            transition: .2s;
+        }
+
+        .login input[type=email]:hover {
+            border-color: #183D3D;
+            outline: none;
+            transition: all .2s ease-in-out;
+        }
+
+        .login input[type=submit] {
+            border: none;
+            background: #183D3D;
+            color: white;
+            font-weight: bold;
+            transition: 0.2s;
+            margin: 20px 0px;
+            border-radius: 25px;
+        }
+
+        .login input[type=submit]:hover {
+            background: #183D3D;
+        }
+
+        .login h2 {
+            margin: 20px 0 0;
+            color: #183D3D;
+            font-size: 28px;
+        }
+
+        .login p {
+            margin-bottom: 40px;
+        }
+
+        .links {
+            display: table;
+            width: 100%;
+            box-sizing: border-box;
+            border-top: 1px solid #c0c0c0;
+            margin-bottom: 10px;
+            text-align: center;
+            margin-top: 16px;
+
+        }
+
+        .links a {
+            display: table-cell;
+            padding-top: 10px;
+            color: #00B7FF !important;
+        }
+
+        .login h2,
+        .login p {
+            text-align: center;
+        }
+
+        .login a {
+            text-decoration: none;
+        }
+
+        .login a:visited {
+            color: inherit;
+        }
+
+        .login a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/login" method="POST" class="login" name="loginForm">
+        <h2>Welcome</h2>
+        <p>Please log in</p>
+        <input type="email" name="email" id="Email" placeholder="Email" required />
+        <input type="password" name="password" id="Password" placeholder="Password" required />
+        <input type="submit" value="Log In" />
+        <div class="links">
+            Create account?<a href="/signUp">Sign Up</a>
+        </div>
+    </form>
+
+
+
+</body>
+
+</html>
