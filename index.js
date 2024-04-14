@@ -4,11 +4,11 @@ const path = require('path')
 const hbs = require('hbs')
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
-const collection = require('./database');
-const User = require('./userScheme')
+const collection = require('./src/database');
+const User = require('./src/userScheme')
 const { check, validationResult } = require('express-validator');
 const { error } = require('console');
-const auth = require('../auth')
+const auth = require('./src/auth')
 
 const app = express()
 

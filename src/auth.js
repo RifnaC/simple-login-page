@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const collection = require('./src/database');
+const collection = require('./database');
 const cookieParser = require('cookie-parser')
 
 async function authenticateUser(req, res, next) {
